@@ -3,6 +3,7 @@ Instructor: Sergio Hidalgo
 
 ### TABLA DE CONTENIDOS
 - [HTML5](#html5)
+  - [Clase 01](#clase-01) 
 
 ## HTML5
 ## Clase 01
