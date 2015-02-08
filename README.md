@@ -55,7 +55,13 @@ Conocemos las primeras etiquetas HTML5:
 * section
 * article
 * footer
- 
+
+#### **Ejemplo 12: Usamos la etiqueta img**
+Insertamos una etiqueta img para colocar una imagen alojada en otro sitio web.
+
+#### **Ejemplo 13: Volvemos a utilizar la etiqueta img**
+Insertamos una etiqueta img para colocar una imagen alojada en nuestro sitio web local.
+
 #### **Portafolio: Creamos un portafolio personal**
 Creamos un portafolio con las siguientes páginas:
 * home
