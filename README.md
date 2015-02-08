@@ -5,7 +5,7 @@ Instructor: Sergio Hidalgo
 - [HTML5](#html5)
 
 ## HTML5
-### Clase 01
+## Clase 01
 #### **Ejemplo 01: Nuestro primer contacto con HTML** 
 Creando un archivo con extensión .html
 
