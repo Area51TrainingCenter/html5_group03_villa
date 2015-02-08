@@ -29,4 +29,4 @@ Experimentamos con las etiquetas h1, h2, h3, h4, h5 y h6, y observamos cómo se 
 Usamos hgroup.
 
 #### **Ejemplo 06: Aprendemos a usar una etiqueta de enlace**
-Usamos la etiqueta "a" y crearmos un enlace a la página web historia.html.
+Usamos la etiqueta "a" y creamos un enlace a la página web historia.html.
