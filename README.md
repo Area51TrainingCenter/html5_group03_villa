@@ -18,3 +18,12 @@ Uso de etiquetas:
 * meta
 * title
 * body
+
+#### **Ejemplo 03: Creamos contenido** 
+Agregamos contenido al archivo html y lo visualizamos en el navegador.
+
+#### **Ejemplo 04: Usamos etiquetas de encabezados**
+Experimentamos con las etiquetas h1, h2, h3, h4, h5 y h6, y observamos cómo se visualizan por defecto en el navegador.
+
+#### **Ejemplo 05: Agrupamos etiquetas de encabezados**
+Usamos hgroup.
