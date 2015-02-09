@@ -4,13 +4,13 @@ Instructor: Sergio Hidalgo
 ### TABLA DE CONTENIDOS
 - [HTML5](#html5)
   - [Clase 01](#clase-01) 
+  - [Clase 02](#clase-02)
 
 ## HTML5
 ## Clase 01
 
 #### **Sliders de la primera clase** 
 html5_css3_javascript_01.pdf
-
 
 #### **Ejemplo 01: Nuestro primer contacto con HTML** 
 Creando un archivo con extensión .html
@@ -73,3 +73,26 @@ Creamos un portafolio con las siguientes páginas:
 * productos
 * servicios
 home
+
+## Clase 02
+
+#### **Sliders de la segunda clase** 
+html5_css3_javascript_02.pdf
+
+#### **Ejemplo 01 - 01: Estructura 1** 
+Creando estructura #1
+
+#### **Ejemplo 01 - 02: Estructura 2** 
+Creando estructura #2
+
+#### **Ejemplo 01 - 03: Estructura 3** 
+Creando estructura #3
+
+#### **Ejemplo 01 - 04: Estructura 4** 
+Creando estructura #4
+
+#### **Ejemplo 01 - 05: Estructura 5** 
+Creando estructura #5
+
+#### **Ejemplo 01 - 06: Estructura 6** 
+Creando estructura #6
