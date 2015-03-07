@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style>
+		section {
+			width:624px;
+			height: 514px;
+			border:1px solid black;
+			margin:10px;
+			float:left;
+			background-color:#ccc;
+			background-image:url(casa.jpg);
+			background-repeat: no-repeat;
+		}
+
+		section.posicion1 {
+			background-position:80px 100px;
+		}
+	
+		section.posicion2 {
+			background-position:80px -100px;
+		}
+
+		section.posicion3 {
+			background-position:-80px 100px;
+		}
+
+		section.posicion4 {
+			background-position:-80px -100px;
+		}
+
+
+	</style>
+
+</head>
+<body>
+	<section>
+		<h1>Original</h1>
+	</section>
+
+	<section class="posicion1">
+		<h1>80px 100px</h1>
+	</section>
+
+	<section class="posicion2">
+		<h1>80px -100px</h1>
+	</section>
+
+	<section class="posicion3">
+		<h1>-80px 100px</h1>
+	</section>
+
+	<section class="posicion4">
+		<h1>-80px -100px</h1>
+	</section>
+
+
+
+</body>
+</html>
