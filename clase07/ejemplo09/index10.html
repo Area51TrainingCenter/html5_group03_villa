@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		section {
+			width:200px;
+			height:200px;
+			background-color:rgba(255,0,0,0.5);
+			margin:10px 300px 80px 300px;
+			border-radius:60px 7px 5px 0;
+			font-family:Arial;
+			font-size:30px;
+			color:black;
+			padding:30px;
+			text-transform: uppercase;
+		}
+
+
+		section.inclinacion1	{
+			transform: skew(20deg, 20deg);
+		}
+
+		section.inclinacion2	{
+			transform: skew(-20deg, -20deg);
+		}
+
+
+	</style>
+</head>
+<body>
+		<section>original</section>
+
+		<section class="inclinacion1">skew(20deg, 20deg)</section>
+
+		<section class="inclinacion2">skew(-20deg, -20deg)</section>
+
+
+</body>
+</html>

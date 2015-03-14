@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		section {
+			width:250px;
+			height:250px;
+			background-color:rgba(255,0,0,0.5);
+			margin:10px 300px 80px 300px;
+			border-radius:60px 7px 5px 0;
+			font-family:Arial;
+			font-size:30px;
+			color:black;
+			padding:30px;
+			text-transform: uppercase;
+
+			transform-origin:0% 0%;  /* left top */
+		}
+
+		section.rotado45 {
+			perspective:600px;
+			transform: rotate(45deg);
+		}
+
+		section.rotado-45 {
+			transform: rotate(-45deg);
+		}
+
+
+	</style>
+</head>
+<body>
+
+	<section>original</section>
+
+	<section class="rotado45">rotate(45deg)</section>
+
+	<section class="rotado-45">rotate(-45deg)</section>
+
+
+</body>
+</html>

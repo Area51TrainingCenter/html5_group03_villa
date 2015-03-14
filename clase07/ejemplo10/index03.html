@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style>
+		section {
+			width: 345px;
+			height: 200px;
+			text-transform: uppercase;
+			background-color: green;
+			border: 1px solid black;
+			color: aqua;
+			font-size: 20px;
+			font-family: Verdana;
+			margin-bottom:50px;				
+		}
+
+
+		section.transicion1 {
+			background-color: red;
+			transition: all 2s linear;
+		}
+
+		section.transicion2 {
+			background-color: blue;
+			transition: all 2s ease-in;
+		}
+
+		section.transicion3 {
+			background-color: yellow;
+			transition: all 2s ease-out;
+		}
+
+		section.transicion4 {
+			background-color: aqua;
+			transition: all 2s ease-in-out;
+		}
+
+		section:hover {
+			width:700px;
+		}	
+	</style>
+
+</head>
+<body>
+
+	<section></section>
+
+	<section class="transicion1"></section>
+
+	<section class="transicion2"></section>
+
+	<section class="transicion3"></section>
+
+	<section class="transicion4"></section>
+
+
+</body>
+</html>
