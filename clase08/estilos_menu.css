@@ -1,0 +1,42 @@
+
+
+ul {
+	padding:0;
+	margin:0;
+	list-style: none;
+	list-style-type: none;
+	width:100%;
+}
+
+ul li {
+	padding:0;
+	margin:0;
+	list-style: none;
+	float:none;
+	width:100%;
+	height:50px;
+}
+
+ul li.li1 {
+	background-color: red;
+}
+ul li.li2 {
+	background-color: blue;
+}
+ul li.li3 {
+	background-color: green;
+}
+ul li.li4 {
+	background-color: yellow;
+}
+
+@media (min-width:500px) {
+	body {background-color:red;}
+	ul li {
+		float:left;
+		width:25%;
+	}
+}
+
+
+

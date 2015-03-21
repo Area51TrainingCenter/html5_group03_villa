@@ -1,0 +1,15 @@
+body {
+	font-size:1.25em;  /* 20 / 16 = 1.25em  */
+}
+
+div {
+	font-size:0.9em; /* 18 / 20 = 0.9em  */
+}
+
+span {
+	font-size:0.7777777777777778em; /* 14 / 18 =  0.7777777777777778em */
+}
+
+p {
+	font-size:40px;
+}
