@@ -1,0 +1,17 @@
+article {
+	width:200px;
+	height:150px;
+	margin:30px;
+	float:left;
+	background-color:grey;
+	position:relative;
+	overflow: hidden
+}
+
+div.descripcion {
+	width:200px;
+	height:50px;
+	background-color:cyan;
+	top:150px;
+	position:absolute;
+}

@@ -1,0 +1,10 @@
+a.boton_on {
+	width:200px;
+	height:60px;
+	background-image: url(botones.png);
+	display: block
+}
+
+a.boton_off {
+	background-position: top right;
+}

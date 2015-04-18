@@ -1,0 +1,13 @@
+jQuery(
+	function($) {
+
+
+		$("a").on("click", function(e) {
+			e.preventDefault();
+			$(this).toggleClass("boton_off");
+		});
+
+
+
+	}
+)
