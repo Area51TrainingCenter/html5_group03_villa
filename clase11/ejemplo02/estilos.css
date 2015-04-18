@@ -1,0 +1,13 @@
+.capa {
+    width:300px;
+    height:200px;
+    background:lightblue;
+    color:red;
+    font-size:30px;
+}
+
+.mensaje {
+    font-size:40px;
+    color:green;
+    display:none;
+}
