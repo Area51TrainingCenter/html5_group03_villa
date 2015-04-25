@@ -91,6 +91,21 @@ jQuery(
 			);
 		}		
 
+		function Eliminar(idPelicula) {
+			$.ajax(
+				{
+					url: "http://mmedica.tibajodemanda.com/peliculas/"+idPelicula,
+					type: "delete",
+					success: function(respuesta) {
+						Listado();
+					},
+					error: function(xhr, estado, err) {
+						console.log(estado);
+					}
+				}
+			);
+		}
+
 		function BorrarFormulario() {
 			$("#titulo").val("");
 			$("#director").val("");
@@ -116,11 +131,15 @@ jQuery(
 			} else {
 				Insertar(dato);
 			}
-
-			
-
 		})
 
+		$("#eliminar").on("click", function() {
+			if(id!=0) {
+				if(confirm("¿Estás seguro de querer eliminar?")) {
+					Eliminar(id);
+				}
+			}
+		})
 
 
 		Listado();
