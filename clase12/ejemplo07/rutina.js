@@ -31,33 +31,46 @@ jQuery(
 		}
 
 		function Listado() {
-			$.ajax({
+			console.log("Solicitando listado");
+			var promesa = $.ajax({
 				url: "http://mmedica.tibajodemanda.com/peliculas",
-				type: "get",
-				success: function(datos) {
-					$("ul").html("");
-					for(var i=0; i< datos.length; i++) {
-						item = "<li><a href='#' rel='" + datos[i].id + "'>" + datos[i].nombre + "</a></li>";
+				type: "get"})
 
-						$("ul").append(item);
+				.done(
+					function(datos) {
+						console.log("Listado cargado");
+						$("ul").html("");
+						for(var i=0; i< datos.length; i++) {
+							item = "<li><a href='#' rel='" + datos[i].id + "'>" + datos[i].nombre + "</a></li>";
+
+							$("ul").append(item);
+						}
+
+						BorrarFormulario();
+
+						$("a").off("click");
+						$("a").on("click", function(e) {
+							e.preventDefault();
+
+							id = $(this).attr("rel");
+
+							Detalle(id);
+
+						});
+				})
+
+				.done(
+					function(datos) {
+						console.log("Cantidad de película", datos.length);
 					}
+				)
 
-					BorrarFormulario();
+				.fail(
+					function(xhr, estado, error) {
+						console.log(estado);
+					}
+				);
 
-					$("a").off("click");
-					$("a").on("click", function(e) {
-						e.preventDefault();
-
-						id = $(this).attr("rel");
-
-						Detalle(id);
-
-					});
-				},
-				error: function(xhr, estado, err) {
-					//console.log(estado);
-				}
-			});
 		}
 
 		function Actualizar(datos, idPelicula) {
@@ -144,8 +157,5 @@ jQuery(
 
 
 		Listado();
-
-
-
 	}
 )

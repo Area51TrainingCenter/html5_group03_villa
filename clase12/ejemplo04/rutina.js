@@ -1,6 +1,6 @@
 jQuery(
 	function($) {
-		var id = 0;
+		var id;
 
 		/////////////////////FUNCIONES
 
@@ -16,7 +16,6 @@ jQuery(
 						$("ul").append(item);
 					}
 
-					BorrarFormulario();
 
 					$("a").off("click");
 					$("a").on("click", function(e) {
@@ -67,52 +66,13 @@ jQuery(
 					data: datos,
 					success: function(respuesta) {
 						Listado();
+						alert("Se actualizó");
 					},
 					error: function(xhr, estado, err) {
 						console.log(estado);
 					}
 				}
 			);
-		}
-
-		function Insertar(datos) {
-			$.ajax(
-				{
-					url: "http://mmedica.tibajodemanda.com/peliculas/",
-					type: "post",
-					data: datos,
-					success: function(respuesta) {
-						Listado();
-					},
-					error: function(xhr, estado, err) {
-						console.log(estado);
-					}
-				}
-			);
-		}		
-
-		function Eliminar(idPelicula) {
-			$.ajax(
-				{
-					url: "http://mmedica.tibajodemanda.com/peliculas/"+idPelicula,
-					type: "delete",
-					success: function(respuesta) {
-						Listado();
-					},
-					error: function(xhr, estado, err) {
-						console.log(estado);
-					}
-				}
-			);
-		}
-
-		function BorrarFormulario() {
-			$("#titulo").val("");
-			$("#director").val("");
-			$("#genero").val("");
-			$("#sinopsis").val("");
-
-			id = 0;
 		}
 
 		/////////////////////
@@ -126,20 +86,10 @@ jQuery(
 			dato.genero = $("#genero").val();
 			dato.sinopsis = $("#sinopsis").val();
 
-			if(id!=0) {
-				Actualizar(dato, id);	
-			} else {
-				Insertar(dato);
-			}
+			Actualizar(dato, id);
+
 		})
 
-		$("#eliminar").on("click", function() {
-			if(id!=0) {
-				if(confirm("¿Estás seguro de querer eliminar?")) {
-					Eliminar(id);
-				}
-			}
-		})
 
 
 		Listado();
